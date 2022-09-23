@@ -22,27 +22,22 @@ case $type in
   f)
     cd $fullPath
     docker-compose build
-    docker-compose up
-  ;;
+    docker-compose up ;;
   b)
     cd $fullPath
-    docker-compose build
-  ;;
+    docker-compose build ;;
   u)
     cd $fullPath
-    docker-compose up
-  ;;
+    docker-compose up ;;
   fc)
     cd $fullPath
     code .
     docker-compose build
-    docker-compose up
-  ;;
+    docker-compose up ;;
   uc)
     cd $fullPath
     code .
-    docker-compose up
-  ;;
+    docker-compose up ;;
   *)
     echo "Entrez le type de run que vous voulez faire"
     echo "f pour une run complète (build et up)"
@@ -51,6 +46,5 @@ case $type in
     echo "fc pour une run complète et ouvrir vscode"
     echo "uc pour une run up et ouvrir vscode"
 
-    read type
-  ;;
+    read type ;;
 esac
